@@ -36,20 +36,18 @@ Bash
 
 git clone https://github.com/willincunha95-spec/ProcessoLogistico.git
 cd ProcessoLogistico
+
 Subir o banco de dados (Docker):
 
-Bash
 
 docker-compose up -d
 Executar a aplicação:
 
-Bash
 
 mvn spring-boot:run
 🛠️ Acesso ao Banco de Dados no Docker
-Para verificar as tabelas (como a tb_usuarios) diretamente no container, utilize:
+Para verificar as tabelas (como a tb_usuarios) diretamente no container.
 
-Bash
 
 docker exec -it pg-encomendas psql -U postgres -d db_processo_logistico
 (Nota: Certifique-se de que o nome do banco de dados no comando \c corresponde ao configurado no seu application.properties).
